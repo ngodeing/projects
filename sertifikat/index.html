@@ -101,6 +101,9 @@
         text-align: center;
         padding-top: 85px;
     }
+    #namaku, #jabatanku{
+        word-spacing: 12px;
+    }
     </style>
 </head>
 <body>
@@ -108,9 +111,9 @@
 <div class="isi">
     <form>
         <label for="nama">Masukkan Nama</label>
-        <input type="text" id="nama">
+        <input type="text" id="nama" maxlength="20">
         <label for="jabatan">Masukan Jabatan</label>
-        <input type="text" id="jabatan">
+        <input type="text" id="jabatan" maxlength="20">
         <button type="button" id="tambah" onclick="ubahValue()">Tambahkan</button>
     </form>
     <div class="review">
