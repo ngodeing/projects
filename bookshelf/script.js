@@ -28,31 +28,60 @@ const pindahkanSemua2 = document.querySelector('#pindahkanSemua2')
 hapuskanSemua.onclick = (e) =>{
     e.preventDefault();
     if (!rakBuku1){
-        alert('Rak 1 masih kosong')
+        Swal.fire('Rak masih kosong')
         
     } else {
-    const konfirm = confirm("Anda akan menghapus seluruh Buku di Rak!")
-    if (konfirm == true){
+    Swal.fire({
+        title: 'Apa kamu yakin?',
+        text: "Data tak akan bisa dikembalikan",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus saja'
+      }).then((result) => {
+        if (result.isConfirmed) {
         localStorage.removeItem('Selesai dibaca')
-        alert('Semua buku telah dihapus')
-        location.reload();
-    }}
+          Swal.fire(
+            'Berhasil',
+            'Semua data berhasil dihapus',
+            'success'
+          )
+          setTimeout(()=>{
+            location.reload();
+          },2000)
+        }
+      })
+    }
     
 }
 
 hapuskanSemua2.onclick = (e) =>{
     e.preventDefault();
     if (!rakBuku2){
-        Swal.fire(
-            'Rak 2 Masih Kosong!'
-          )
+        Swal.fire('Rak masih kosong')
     } else {
-    const konfirm = confirm("Anda akan menghapus seluruh Buku di Rak!")
-    if (konfirm == true){
-        localStorage.removeItem('Belum selesai dibaca')
-        alert('Semua buku telah dihapus')
-        location.reload();
-    }}
+        Swal.fire({
+            title: 'Apa kamu yakin?',
+            text: "Data tak akan bisa dikembalikan",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, Hapus saja'
+          }).then((result) => {
+            if (result.isConfirmed) {
+            localStorage.removeItem('Belum selesai dibaca')
+              Swal.fire(
+                'Berhasil',
+                'Semua data berhasil dihapus',
+                'success'
+              )
+              setTimeout(()=>{
+                location.reload();
+              },2000)
+            }
+          })}
     
 }
 
@@ -61,54 +90,111 @@ hapuskan.onclick = (e)=>{
 e.preventDefault();
 const hapus = parseInt(document.querySelector('#hapus').value) - 1;
 if (hapus+1 == 100){
-    const konfirm = confirm("Anda akan menghapus seluruh Buku!")
-    if (konfirm == true){
+    Swal.fire({
+        title: 'Apa kamu yakin?',
+        text: "Data tak akan bisa dikembalikan",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus saja'
+      }).then((result) => {
+        if (result.isConfirmed) {
         localStorage.removeItem('Selesai dibaca')
-        location.reload();
-    }
+          Swal.fire(
+            'Berhasil',
+            'Semua data berhasil dihapus',
+            'success'
+          )
+          setTimeout(()=>{
+            location.reload();
+          },2000)
+        }
+      })
     
 } if (hapus+1 <= 0){
     return undefined;
 }
 const lahh = rakBuku1[hapus].isComplete
-const konfirmasi = confirm(`Anda akan menghapus No.${hapus + 1}?`)
-if (konfirmasi == true){
-if (lahh == true){
-    rak1.splice(hapus, 1);
-    localStorage.setItem("Selesai dibaca", '['+rak1+']')
-    alert(`No.${hapus+1} berhasil dihapus`)
-    location.reload();
-}
-} else {
-    alert('Operasi dibatalkan')
-} 
+Swal.fire({
+    title: `Anda akan menghapus No.${hapus + 1}?`,
+    text: "Data tak akan bisa dikembalikan",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Ya, Hapus saja'
+  }).then((result) => {
+    if (result.isConfirmed) {
+        if (lahh == true){
+            rak1.splice(hapus, 1);
+            localStorage.setItem("Selesai dibaca", '['+rak1+']')
+            Swal.fire(
+                'Berhasil',
+                `No.${hapus+1} berhasil dihapus`,
+                'success'
+              )
+        }
+      setTimeout(()=>{
+        location.reload();
+      },2000)
+    }
+  })
 }
 
 hapuskan2.onclick = (e)=>{
     e.preventDefault();
     const hapus2 = parseInt(document.querySelector('#hapus2').value) - 1;
     if (hapus2+1 == 100){
-        const konfirm = confirm("Anda akan menghapus seluruh Buku!")
-        if(konfirm == true){
+        Swal.fire({
+            title: 'Apa kamu yakin?',
+            text: "Data tak akan bisa dikembalikan",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, Hapus saja'
+          }).then((result) => {
+            if (result.isConfirmed) {
             localStorage.removeItem('Belum selesai dibaca')
-            location.reload();
-        }
-        
+              Swal.fire(
+                'Berhasil',
+                'Semua data berhasil dihapus',
+                'success'
+              )
+              setTimeout(()=>{
+                location.reload();
+              },2000)
+            }
+          })
     } if (hapus2+1 <= 0){
         return undefined;
     }
     const lahh2 = rakBuku2[hapus2].isComplete
-    const konfirmasi2 = confirm(`Anda akan menghapus No.${hapus2 + 1}?`)
-    if (konfirmasi2 == true){
-    if (lahh2 == false){
-        
-        rak2.splice(hapus2, 1);
-        localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
-        alert(`No.${hapus2+1} berhasil dihapus`)
-        location.reload();
-    }} else {
-        alert('Operasi dibatalkan')
-    } 
+    Swal.fire({
+        title: `Anda akan menghapus No.${hapus2 + 1}?`,
+        text: "Data tak akan bisa dikembalikan",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus saja'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            if (lahh2 == false){
+                rak2.splice(hapus2, 1);
+                localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
+                Swal.fire(
+                    'Berhasil',
+                    `No.${hapus2+1} berhasil dihapus`,
+                    'success'
+                  )
+            }
+          setTimeout(()=>{
+            location.reload();
+          },2000)
+        }
+      })
 }
 
 
@@ -125,22 +211,35 @@ pindahkan.onclick = (e)=>{
         return undefined;
     }
     const lahh = rakBuku1[pindah].isComplete
-    const konfirmasi = confirm(`Anda akan memindah No.${pindah + 1}?`)
-    if (konfirmasi == true){
-    if (lahh == true){
-        const one = JSON.parse(rak1[pindah]);
-        one.isComplete = false;
-        const two = JSON.stringify(one);
-        rak2.push(two)
-        localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
-        rak1.splice(pindah, 1);
-        localStorage.setItem("Selesai dibaca", '['+rak1+']')
-        alert(`No.${pindah+1} berhasil dipindah`)
-        location.reload();
-    }
-    } else {
-        alert('Operasi dibatalkan')
-    }
+    Swal.fire({
+        title: `Anda akan memindah No.${pindah + 1}?`,
+        text: "Data tak akan bisa dikembalikan",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Pindah saja'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            if (lahh == true){
+                const one = JSON.parse(rak1[pindah]);
+                one.isComplete = false;
+                const two = JSON.stringify(one);
+                rak2.push(two)
+                localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
+                rak1.splice(pindah, 1);
+                localStorage.setItem("Selesai dibaca", '['+rak1+']')
+                Swal.fire(
+                    'Berhasil',
+                    `No.${pindah+1} berhasil dipindah`,
+                    'success'
+                  )
+            }
+          setTimeout(()=>{
+            location.reload();
+          },2000)
+        }
+      })
     }
 
     pindahkanSemua.onclick = (e)=>{
@@ -148,20 +247,34 @@ pindahkan.onclick = (e)=>{
         if (!rakBuku1){
             alert('Rak 1 Masih kosong')
         } else {
-        const konfirmasi = confirm(`Anda akan memindah semua Buku ke Rak 2!`)
-        if (konfirmasi == true){
-            for (i = 0; i < rak1.length; i++){
-            const one = JSON.parse(rak1[i]);
-            one.isComplete = false;
-            const two = JSON.stringify(one);
-            rak2.push(two)} 
-            localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
-            localStorage.removeItem("Selesai dibaca")
-            alert(`Semua buku berhasil dipindah`)
-            location.reload();
-        } else {
-            alert('Operasi dibatalkan')
-        }}
+        Swal.fire({
+            title: 'Apa kamu yakin?',
+            text: "Data tak akan bisa dikembalikan",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, Pindahkan saja'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                for (i = 0; i < rak1.length; i++){
+                    const one = JSON.parse(rak1[i]);
+                    one.isComplete = false;
+                    const two = JSON.stringify(one);
+                    rak2.push(two)} 
+                    localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
+                    localStorage.removeItem("Selesai dibaca")
+              Swal.fire(
+                'Berhasil',
+                `Semua buku berhasil dipindah`,
+                'success'
+              )
+              setTimeout(()=>{
+                location.reload();
+              },2000)
+            }
+          })
+    }
         }
 
     pindahkan2.onclick = (e)=>{
@@ -172,21 +285,35 @@ pindahkan.onclick = (e)=>{
         }
         const lahh2 = rakBuku2[pindah2].isComplete
         document.forms[0].reset();
-        const konfirmasi2 = confirm(`Anda akan memindah No.${pindah2 + 1}?`)
-        if (konfirmasi2 == true){
-        if (lahh2 == false){
-        const one = JSON.parse(rak2[pindah2]);
-        one.isComplete = true;
-        const two = JSON.stringify(one);
-            rak1.push(two)
-            localStorage.setItem("Selesai dibaca", '['+rak1+']')
-            rak2.splice(pindah2, 1);
-            localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
-            alert(`No.${pindah2+1} berhasil dipindah`)
-            location.reload();
-        }} else {
-            alert('Operasi dibatalkan')
-        }
+            Swal.fire({
+                title: `Anda akan memindah No.${pindah2 + 1}?`,
+                text: "Data tak akan bisa dikembalikan",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Pindah saja'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    if (lahh2 == false){
+                        const one = JSON.parse(rak2[pindah2]);
+                        one.isComplete = true;
+                        const two = JSON.stringify(one);
+                        rak1.push(two)
+                        localStorage.setItem("Selesai dibaca", '['+rak1+']')
+                        rak2.splice(pindah2, 1);
+                        localStorage.setItem("Belum selesai dibaca", '['+rak2+']')
+                        Swal.fire(
+                            'Berhasil',
+                            `No.${pindah2+1} berhasil dipindah`,
+                            'success'
+                          )
+                    }
+                  setTimeout(()=>{
+                    location.reload();
+                  },2000)
+                }
+              })
     }
 
     pindahkanSemua2.onclick = (e)=>{
@@ -194,20 +321,34 @@ pindahkan.onclick = (e)=>{
         if (!rakBuku2){
             alert('Rak 2 Masih kosong')
         } else {
-        const konfirmasi = confirm(`Anda akan memindah semua Buku ke Rak 1!`)
-        if (konfirmasi == true){
-            for (i = 0; i < rak2.length; i++){
-            const one = JSON.parse(rak2[i]);
-            one.isComplete = true;
-            const two = JSON.stringify(one);
-            rak1.push(two)} 
-            localStorage.setItem("Selesai dibaca", '['+rak1+']')
-            localStorage.removeItem("Belum selesai dibaca")
-            alert(`Semua buku berhasil dipindah`)
-            location.reload();
-        } else {
-            alert('Operasi dibatalkan')
-        }}
+            Swal.fire({
+                title: 'Apa kamu yakin?',
+                text: "Data tak akan bisa dikembalikan",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Pindahkan saja'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    for (i = 0; i < rak2.length; i++){
+                        const one = JSON.parse(rak2[i]);
+                        one.isComplete = true;
+                        const two = JSON.stringify(one);
+                        rak1.push(two)} 
+                        localStorage.setItem("Selesai dibaca", '['+rak1+']')
+                        localStorage.removeItem("Belum selesai dibaca")
+                  Swal.fire(
+                    'Berhasil',
+                    `Semua buku berhasil dipindah`,
+                    'success'
+                  )
+                  setTimeout(()=>{
+                    location.reload();
+                  },2000)
+                }
+              })
+        }
         }
 
 

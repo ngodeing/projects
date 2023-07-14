@@ -1,14 +1,17 @@
+
+
 body{
     margin: 0px;
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(74, 114, 114);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
-    color: rgb(229, 229, 229);
+    color: rgb(226, 255, 255);
     text-align: center;
     background-color: rgb(112, 161, 161);
     padding: 15px;
     margin-top: 0px;
+    box-shadow: 0px 0px 20px rgb(42, 64, 64);
 }
 h2{
     background-color: rgb(227, 227, 227);
@@ -36,47 +39,59 @@ input{
     width: 10%;
 }
 button{
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(48, 70, 70);
     color: rgb(228, 228, 228);
     border-style: none;
     border-radius: 5px;
     padding: 7px;
     margin: 7px 0px 5px 0px;
 }
+/* .edit button{
+    background-color: rgb(62, 79, 62)
+} */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
 .input{
     background-color: rgb(112, 161, 161);
     padding: 20px;
-    margin: 0px 10px;
-    width: 28%;
+    margin: 15px 10px;
+    width: 280px;
     border-radius: 15px;
     float: left;
+    box-shadow: 0px 10px 20px rgb(40, 61, 61);
 }
 .rak{
-    background-color: rgb(159, 167, 195);
+    background-color: rgb(112, 161, 161);
     padding: 20px;
-    margin: 0px 10px;
-    width: 28%;
+    margin: 15px 10px;
+    width: 280px;
     border-radius: 15px;
     float: left;
+    box-shadow: 0px 10px 20px rgb(40, 61, 61);
+}
+.edit{
+    background-color: rgb(112, 161, 161);
+    padding: 20px;
+    margin: 15px 10px;
+    width: 360px;
+    border-radius: 15px;
+    float: left;
+    box-shadow: 0px 10px 20px rgb(40, 61, 61);
 }
 pre{
-    background-color: rgb(86, 86, 113);
+    background-color: rgb(48, 70, 70);
     color: rgb(233, 233, 233);
     padding: 10px;
     width: 90%;
     border-radius: 10px;
 }
-.edit{
-    background-color: rgb(135, 192, 135);
-    padding: 20px;
-    margin: 0px 10px;
-    width: 28%;
-    border-radius: 15px;
-    float: left;
-}
 
-
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 768px){
     .input,.edit,.rak{
         float: none;
         width: 85%;
