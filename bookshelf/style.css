@@ -2,11 +2,11 @@
 
 body{
     margin: 0px;
-    background-color: rgb(74, 114, 114);
+    background-color: rgb(55, 88, 88);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
-    color: rgb(226, 255, 255);
+    color: rgb(238, 255, 255);
     text-align: center;
     background-color: rgb(112, 161, 161);
     padding: 15px;
@@ -94,11 +94,14 @@ pre{
 @media screen and (max-width: 768px){
     .input,.edit,.rak{
         float: none;
-        width: 85%;
-        margin: 10px auto;
+        width: 75%;
+        margin: 15px auto;
     }
     input{
-        width: 80%;
+        width: 95%;
+    }
+    .edit input{
+        width: 95%;
     }
     body{
         font-size: 80%;

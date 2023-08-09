@@ -245,7 +245,7 @@ pindahkan.onclick = (e)=>{
     pindahkanSemua.onclick = (e)=>{
         e.preventDefault();
         if (!rakBuku1){
-            alert('Rak 1 Masih kosong')
+            Swal.fire('Rak masih kosong')
         } else {
         Swal.fire({
             title: 'Apa kamu yakin?',
@@ -319,7 +319,7 @@ pindahkan.onclick = (e)=>{
     pindahkanSemua2.onclick = (e)=>{
         e.preventDefault();
         if (!rakBuku2){
-            alert('Rak 2 Masih kosong')
+            Swal.fire('Rak masih kosong')
         } else {
             Swal.fire({
                 title: 'Apa kamu yakin?',
