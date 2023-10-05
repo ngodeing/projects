@@ -103,7 +103,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Setup
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.GDArrowObjects2= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.userFunc0x90b058 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.userFunc0x90c798 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 let dbbg = objects[0]._DialogBoxBackGround = {};
 dbbg.Bg = {name:objects[0].name, id:objects[0].id};
@@ -162,7 +162,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__DialogB
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.GDObjectObjects1);
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.userFunc0x90b058(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SetupContext.userFunc0x90c798(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -256,7 +256,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doSte
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doStepPreEventsContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doStepPreEventsContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doStepPreEventsContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {return}
@@ -320,7 +320,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doSte
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doStepPreEventsContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.doStepPreEventsContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -397,7 +397,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenC
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenContext.userFunc0x1509b80 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenContext.userFunc0x151fb80 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -440,7 +440,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenC
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenContext.userFunc0x1509b80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.OpenContext.userFunc0x151fb80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -520,7 +520,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Close
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CloseContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CloseContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CloseContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -556,7 +556,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Close
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CloseContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CloseContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -633,7 +633,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTextContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTextContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTextContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -662,7 +662,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTextContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTextContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -740,7 +740,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeNameImageTextContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeNameImageTextContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeNameImageTextContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -777,7 +777,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeNameImageTextContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeNameImageTextContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -857,7 +857,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingSoundContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingSoundContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingSoundContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -872,7 +872,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingSoundContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingSoundContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -950,7 +950,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingIntervalContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingIntervalContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingIntervalContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -961,7 +961,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingIntervalContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeTypingIntervalContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1039,7 +1039,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipT
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipTypingContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipTypingContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipTypingContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {console.warn("Must be setup first.");return;}
@@ -1060,7 +1060,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipT
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipTypingContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.SkipTypingContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1137,7 +1137,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpe
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpenContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpenContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpenContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {eventsFunctionContext.returnValue = false;return;}
@@ -1148,7 +1148,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpe
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpenContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsOpenContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1225,7 +1225,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTyp
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTypingContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTypingContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTypingContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {eventsFunctionContext.returnValue = false;return;}
@@ -1236,7 +1236,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTyp
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTypingContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsTypingContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1313,7 +1313,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsClo
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsCloseContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsCloseContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsCloseContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {eventsFunctionContext.returnValue = false;return;}
@@ -1324,7 +1324,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsClo
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsCloseContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.IsCloseContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1401,7 +1401,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Compa
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CompareChangeCounterContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CompareChangeCounterContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CompareChangeCounterContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {eventsFunctionContext.returnValue = false;return;}
@@ -1412,7 +1412,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Compa
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CompareChangeCounterContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.CompareChangeCounterContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1490,7 +1490,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeCounterContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeCounterContext.userFunc0x1423410 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeCounterContext.userFunc0x1510210 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 let dbbg = eventsFunctionContext.getObjects("Object")[0]._DialogBoxBackGround;
 if (!dbbg) {eventsFunctionContext.returnValue = 0;return;}
@@ -1501,7 +1501,7 @@ gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.Chang
 {
 
 
-gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeCounterContext.userFunc0x1423410(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DialogBox__DialogBoxBackGround.DialogBoxBackGround.prototype.ChangeCounterContext.userFunc0x1510210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

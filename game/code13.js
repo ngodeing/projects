@@ -148,7 +148,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "begin") >= 5;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25772924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25886812);
 }
 }
 if (isConditionTrue_0) {

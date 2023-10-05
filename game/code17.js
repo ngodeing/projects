@@ -188,21 +188,6 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Title2"), gdjs.soalgambar3Code.GDTitle2Objects1);
-{for(var i = 0, len = gdjs.soalgambar3Code.GDTitle2Objects1.length ;i < len;++i) {
-    gdjs.soalgambar3Code.GDTitle2Objects1[i].setBBText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6))));
-}
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "running");
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "timer");
 }{runtimeScene.getGame().getVariables().getFromIndex(6).add(1);
 }}
@@ -215,9 +200,11 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(8).sub(2);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4))).getChild("isAnswered"), true);
-}{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("Title2"), gdjs.soalgambar3Code.GDTitle2Objects1);
+{for(var i = 0, len = gdjs.soalgambar3Code.GDTitle2Objects1.length ;i < len;++i) {
+    gdjs.soalgambar3Code.GDTitle2Objects1[i].setBBText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6))));
+}
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "running");
 }}
 
 }
@@ -340,16 +327,6 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4))).getChild("isAnswered"), true);
 }}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
 
 }
 

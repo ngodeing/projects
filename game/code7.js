@@ -173,6 +173,35 @@ gdjs.copyArray(runtimeScene.getObjects("BaselayerOkines"), gdjs.FinishCode.GDBas
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(300);
 }{runtimeScene.getGame().getVariables().getFromIndex(18).add(1);
 }{runtimeScene.getGame().getVariables().getFromIndex(15).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(0);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(0).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(1).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(2).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(3).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(4).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(5).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(6).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(7).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(8).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(9).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(10).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(11).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(12).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(13).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(14).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(15).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(16).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(17).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(18).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(19).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(20).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(21).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(22).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(23).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(24).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(25).getChild("isAnswered"), false);
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(26).getChild("isAnswered"), false);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }}
 

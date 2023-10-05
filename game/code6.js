@@ -704,7 +704,7 @@ let isConditionTrue_0 = false;
 
 };gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects3Objects = Hashtable.newFrom({"BaselayerOkines": gdjs.Level_325Code.GDBaselayerOkinesObjects3});
 gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDFireBurningObjects3Objects = Hashtable.newFrom({"FireBurning": gdjs.Level_325Code.GDFireBurningObjects3});
-gdjs.Level_325Code.asyncCallback25331292 = function (runtimeScene, asyncObjectsList) {
+gdjs.Level_325Code.asyncCallback25439420 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("FireBurning"), gdjs.Level_325Code.GDFireBurningObjects4);
 
 {for(var i = 0, len = gdjs.Level_325Code.GDFireBurningObjects4.length ;i < len;++i) {
@@ -720,7 +720,7 @@ gdjs.Level_325Code.eventsList15 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.Level_325Code.GDFireBurningObjects3) asyncObjectsList.addObject("FireBurning", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25331292(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25439420(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -729,7 +729,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3)
 
 };gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects3Objects = Hashtable.newFrom({"BaselayerOkines": gdjs.Level_325Code.GDBaselayerOkinesObjects3});
 gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDFireBurning2Objects3Objects = Hashtable.newFrom({"FireBurning2": gdjs.Level_325Code.GDFireBurning2Objects3});
-gdjs.Level_325Code.asyncCallback25332340 = function (runtimeScene, asyncObjectsList) {
+gdjs.Level_325Code.asyncCallback25440468 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("FireBurning2"), gdjs.Level_325Code.GDFireBurning2Objects4);
 
 {for(var i = 0, len = gdjs.Level_325Code.GDFireBurning2Objects4.length ;i < len;++i) {
@@ -745,7 +745,7 @@ gdjs.Level_325Code.eventsList16 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.Level_325Code.GDFireBurning2Objects3) asyncObjectsList.addObject("FireBurning2", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25332340(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25440468(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -766,7 +766,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects3Objects, gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDFireBurningObjects3Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25329644);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25437772);
 }
 }
 if (isConditionTrue_0) {
@@ -800,7 +800,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects3Objects, gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDFireBurning2Objects3Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25331556);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25439684);
 }
 }
 if (isConditionTrue_0) {
@@ -834,7 +834,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects3Objects, gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDDevoTheDevilObjects3Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25333436);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25441564);
 }
 }
 if (isConditionTrue_0) {
@@ -867,7 +867,7 @@ for (var i = 0, k = 0, l = gdjs.Level_325Code.GDBaselayerOkinesObjects2.length;i
 gdjs.Level_325Code.GDBaselayerOkinesObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25335444);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25443572);
 }
 }
 if (isConditionTrue_0) {
@@ -880,7 +880,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Level_325Code.asyncCallback25336852 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level_325Code.asyncCallback25444980 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game OverScene", false);
 }}
 gdjs.Level_325Code.eventsList18 = function(runtimeScene) {
@@ -891,7 +891,7 @@ gdjs.Level_325Code.eventsList18 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25336852(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25444980(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -960,7 +960,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25338292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25446420);
 }
 }
 if (isConditionTrue_0) {
@@ -1103,7 +1103,7 @@ gdjs.copyArray(runtimeScene.getObjects("BaselayerOkines"), gdjs.Level_325Code.GD
 
 };gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerOkinesObjects2Objects = Hashtable.newFrom({"BaselayerOkines": gdjs.Level_325Code.GDBaselayerOkinesObjects2});
 gdjs.Level_325Code.mapOfGDgdjs_9546Level_9595325Code_9546GDBaselayerVortexObjects2Objects = Hashtable.newFrom({"BaselayerVortex": gdjs.Level_325Code.GDBaselayerVortexObjects2});
-gdjs.Level_325Code.asyncCallback25344228 = function (runtimeScene, asyncObjectsList) {
+gdjs.Level_325Code.asyncCallback25452356 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "soal1");
 }}
 gdjs.Level_325Code.eventsList22 = function(runtimeScene) {
@@ -1114,7 +1114,7 @@ gdjs.Level_325Code.eventsList22 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25344228(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Level_325Code.asyncCallback25452356(runtimeScene, asyncObjectsList)));
 }
 }
 

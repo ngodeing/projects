@@ -172,7 +172,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "timer");
-}{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.randomInRange(0, 28));
+}{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.randomInRange(0, 26));
 }{runtimeScene.getGame().getVariables().getFromIndex(6).add(1);
 }}
 
@@ -190,7 +190,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGa
 if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 if (true) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.randomInRange(0, 28));
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.randomInRange(0, 26));
 }
 { //Subevents: 
 gdjs.soal1Code.eventsList0(runtimeScene);} //Subevents end.
